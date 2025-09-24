@@ -29,6 +29,7 @@ Implementa un pipeline completo de ingesta, transformación y modelado dimension
 
 ## 🏗️ Arquitectura
 
+```mermaid
 flowchart LR
   subgraph Sources[Fuentes]
     A1[NYC TLC Parquet<br/>Yellow/Green 2015–2025]
@@ -36,49 +37,47 @@ flowchart LR
   end
 
   subgraph Mage[Mage (Orquestación)]
-    M1[Triggers/Blocks<br/>Ingest Yellow]
-    M2[Triggers/Blocks<br/>Ingest Green]
-    M3[DBT: Staging → Silver]
-    M4[DBT: Gold (Dims & Fct)]
-    M5[DBT Tests + Docs]
-    M6[Snowflake Ops<br/>(Clustering/Grants)]
+    M1[Ingest Yellow]
+    M2[Ingest Green]
+    M3[DBT Staging → Silver]
+    M4[DBT Gold (Dims & Fct)]
+    M5[DBT Tests]
+    M6[Snowflake Ops<br/>Clustering / Grants]
   end
 
-  subgraph Snowflake[Snowflake (DB)]
+  subgraph Snowflake[Snowflake]
     direction TB
-    BZ[(BRONZE schema)]
-    SZ[(SILVER schema)]
-    LZ[(LOOKUPS schema)]
-    GD[(GOLD schema)]
+    BZ[(BRONZE)]
+    SZ[(SILVER)]
+    LZ[(LOOKUPS)]
+    GD[(GOLD)]
   end
 
   subgraph Consumers[Consumo / Análisis]
-    C1[Snowflake Notebook<br/>data_analysis.ipynb]
-    C2[BI / Ad-hoc SQL]
+    C1[Notebook data_analysis.ipynb]
+    C2[BI / SQL Ad-hoc]
   end
 
-  A1 -->|Copy/Load| M1
-  A1 -->|Copy/Load| M2
-  A2 -->|Seed/Stage| M3
+  A1 --> M1
+  A1 --> M2
+  A2 --> M3
 
-  M1 -->|COPY INTO / LOAD| BZ
-  M2 -->|COPY INTO / LOAD| BZ
+  M1 --> BZ
+  M2 --> BZ
 
-  M3 -->|dbt run<br/>stg_yellow / stg_green| SZ
-  M3 -->|join Taxi Zones| SZ
+  M3 --> SZ
+  M3 --> SZ
 
-  M4 -->|dbt run<br/>dim_* / fct_trips| GD
-  M4 -->|ratecode/payment seeds| LZ
+  SZ --> GD
+  LZ --> GD
 
-  M5 -->|dbt test| GD
-  M6 -->|ALTER TABLE ... CLUSTER BY| GD
-
-  BZ -->|SELECT| SZ
-  SZ -->|SELECT| GD
-  LZ -->|JOIN lookups| GD
+  M4 --> GD
+  M5 --> GD
+  M6 --> GD
 
   GD --> C1
   GD --> C2
+```
 
 
 - **Bronze (raw)**: datos tal cual del Parquet + metadatos de ingesta (`run_id`, `ingest_ts`).  
@@ -229,4 +228,5 @@ Consultas SQL (Snowflake Notebook):
 ## 📜 Licencia
 
 MIT © 2025
+
 
