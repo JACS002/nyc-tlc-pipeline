@@ -29,7 +29,57 @@ Implementa un pipeline completo de ingesta, transformación y modelado dimension
 
 ## 🏗️ Arquitectura
 
-![Arquitectura](https://github.com/user-attachments/assets/b16fe115-7484-4204-a9e2-51cdf0a6ef34)
+flowchart LR
+  subgraph Sources[Fuentes]
+    A1[NYC TLC Parquet<br/>Yellow/Green 2015–2025]
+    A2[Taxi Zones CSV/Parquet]
+  end
+
+  subgraph Mage[Mage (Orquestación)]
+    M1[Triggers/Blocks<br/>Ingest Yellow]
+    M2[Triggers/Blocks<br/>Ingest Green]
+    M3[DBT: Staging → Silver]
+    M4[DBT: Gold (Dims & Fct)]
+    M5[DBT Tests + Docs]
+    M6[Snowflake Ops<br/>(Clustering/Grants)]
+  end
+
+  subgraph Snowflake[Snowflake (DB)]
+    direction TB
+    BZ[(BRONZE schema)]
+    SZ[(SILVER schema)]
+    LZ[(LOOKUPS schema)]
+    GD[(GOLD schema)]
+  end
+
+  subgraph Consumers[Consumo / Análisis]
+    C1[Snowflake Notebook<br/>data_analysis.ipynb]
+    C2[BI / Ad-hoc SQL]
+  end
+
+  A1 -->|Copy/Load| M1
+  A1 -->|Copy/Load| M2
+  A2 -->|Seed/Stage| M3
+
+  M1 -->|COPY INTO / LOAD| BZ
+  M2 -->|COPY INTO / LOAD| BZ
+
+  M3 -->|dbt run<br/>stg_yellow / stg_green| SZ
+  M3 -->|join Taxi Zones| SZ
+
+  M4 -->|dbt run<br/>dim_* / fct_trips| GD
+  M4 -->|ratecode/payment seeds| LZ
+
+  M5 -->|dbt test| GD
+  M6 -->|ALTER TABLE ... CLUSTER BY| GD
+
+  BZ -->|SELECT| SZ
+  SZ -->|SELECT| GD
+  LZ -->|JOIN lookups| GD
+
+  GD --> C1
+  GD --> C2
+
 
 - **Bronze (raw)**: datos tal cual del Parquet + metadatos de ingesta (`run_id`, `ingest_ts`).  
 - **Silver**: estandarización, limpieza, enriquecimiento con Taxi Zones.  
@@ -43,14 +93,7 @@ Implementa un pipeline completo de ingesta, transformación y modelado dimension
 Matriz de cobertura por año/mes y servicio (Yellow/Green).  
 Se documenta si un mes carece de archivo Parquet oficial.
 
-| Año | Ene | Feb | Mar | … | Dic |
-|-----|-----|-----|-----|---|-----|
-| 2015 | ✅ Y/G | ✅ Y/G | ✅ Y/G | … | ✅ Y/G |
-| … | … | … | … | … | … |
-| 2025 | ✅ Y/G | ✅ Y/G | ✅ Y/G | … | ✅ Y/G |
-
-✅ = cargado en Snowflake (bronze).  
-❌ = mes no disponible en Parquet (según NYC TLC).  
+Revisar en docs coverage_matrix.csv
 
 ---
 
@@ -186,3 +229,4 @@ Consultas SQL (Snowflake Notebook):
 ## 📜 Licencia
 
 MIT © 2025
+
