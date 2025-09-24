@@ -32,30 +32,29 @@ Implementa un pipeline completo de ingesta, transformación y modelado dimension
 ```mermaid
 flowchart LR
   subgraph Sources[Fuentes]
-    A1[NYC TLC Parquet<br/>Yellow/Green 2015–2025]
-    A2[Taxi Zones CSV/Parquet]
+    A1["NYC TLC Parquet\nYellow/Green 2015–2025"]
+    A2["Taxi Zones CSV/Parquet"]
   end
 
-  subgraph Mage[Mage (Orquestación)]
-    M1[Ingest Yellow]
-    M2[Ingest Green]
-    M3[DBT Staging → Silver]
-    M4[DBT Gold (Dims & Fct)]
-    M5[DBT Tests]
-    M6[Snowflake Ops<br/>Clustering / Grants]
+  subgraph Mage["Mage (Orquestación)"]
+    M1["Ingest Yellow"]
+    M2["Ingest Green"]
+    M3["DBT Staging → Silver"]
+    M4["DBT Gold (Dims & Fct)"]
+    M5["DBT Tests"]
+    M6["Snowflake Ops\nClustering / Grants"]
   end
 
   subgraph Snowflake[Snowflake]
-    direction TB
     BZ[(BRONZE)]
     SZ[(SILVER)]
     LZ[(LOOKUPS)]
     GD[(GOLD)]
   end
 
-  subgraph Consumers[Consumo / Análisis]
-    C1[Notebook data_analysis.ipynb]
-    C2[BI / SQL Ad-hoc]
+  subgraph Consumers["Consumo / Análisis"]
+    C1["Notebook data_analysis.ipynb"]
+    C2["BI / SQL Ad-hoc"]
   end
 
   A1 --> M1
@@ -65,7 +64,6 @@ flowchart LR
   M1 --> BZ
   M2 --> BZ
 
-  M3 --> SZ
   M3 --> SZ
 
   SZ --> GD
@@ -78,6 +76,7 @@ flowchart LR
   GD --> C1
   GD --> C2
 ```
+
 
 
 - **Bronze (raw)**: datos tal cual del Parquet + metadatos de ingesta (`run_id`, `ingest_ts`).  
@@ -228,5 +227,6 @@ Consultas SQL (Snowflake Notebook):
 ## 📜 Licencia
 
 MIT © 2025
+
 
 
