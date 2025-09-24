@@ -1,0 +1,57 @@
+version: 2
+
+models:
+  - name: silver_trips
+    columns:
+      - name: pickup_datetime
+        tests: [not_null]
+
+      - name: dropoff_datetime
+        tests: [not_null]
+
+      - name: passenger_count
+        tests:
+          - not_null
+
+      - name: trip_distance_clean
+        tests:
+          - not_null:
+              config:
+                warn_if: ">= 0.2"
+                error_if: ">= 0.5"
+
+      - name: total_amount_clean
+        tests:
+          - not_null:
+              config:
+                warn_if: ">= 0.2"
+                error_if: ">= 0.5"
+
+      # Relaciones a lookups:
+      - name: payment_type
+        tests:
+          - relationships:
+              column_name: payment_type
+              to: ref('payment_type_lookup')
+              field: payment_type
+
+      - name: ratecode_id
+        tests:
+          - relationships:
+              column_name: ratecode_id 
+              to: ref('ratecode_lookup')
+              field: ratecode_id
+
+      - name: pu_location_id
+        tests:
+          - relationships:
+              column_name: pu_location_id
+              to: source('bronze', 'taxi_zones')
+              field: locationid
+
+      - name: do_location_id
+        tests:
+          - relationships:
+              column_name: do_location_id
+              to: source('bronze', 'taxi_zones')
+              field: locationid

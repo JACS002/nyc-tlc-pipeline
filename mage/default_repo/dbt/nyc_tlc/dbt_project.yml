@@ -1,0 +1,34 @@
+name: nyc_tlc
+version: 1.0.0
+config-version: 2
+
+profile: nyc_tlc_profile
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+seed-paths: ["seeds"]     # no usamos seeds, pero no estorba
+snapshot-paths: ["snapshots"]
+test-paths: ["tests"]
+analysis-paths: ["analysis"]
+
+models:
+  nyc_tlc:
+    +materialized: view
+
+    staging:
+      +tags: ["staging"]
+
+    core:
+      +tags: ["core"]
+
+    marts:
+      +materialized: table
+      +tags: ["marts"]
+
+    lookups:
+      +materialized: table
+      +tags: ["lookups"]
+
+vars:
+  # Para mantener compatibilidad con surrogate_key viejo de dbt_utils
+  surrogate_key_treat_nulls_as_empty_strings: True

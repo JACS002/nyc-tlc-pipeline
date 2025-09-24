@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: NYC_TLC
+    schema: BRONZE
+    tables:
+      - name: yellow_trips
+        description: Raw Yellow trips (Parquet) + metadatos (run_id, ingest_ts, year, month, service_type, source_url)
+      - name: green_trips
+        description: Raw Green trips (Parquet) + metadatos (run_id, ingest_ts, year, month, service_type, source_url)
+      - name: taxi_zones
+        description: Lookup oficial TLC Taxi Zones (LocationID → zone, borough)
+

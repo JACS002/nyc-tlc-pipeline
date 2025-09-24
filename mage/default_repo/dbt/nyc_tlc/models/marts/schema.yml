@@ -1,0 +1,82 @@
+version: 2
+
+models:
+  - name: dim_zone
+    description: "Dimensión de zonas de taxi de NYC."
+    columns:
+      - name: zone_sk
+        tests:
+          - not_null
+          - unique
+      - name: zone_id
+        tests:
+          - not_null
+
+  - name: dim_payment_type
+    description: "Dimensión de tipos de pago."
+    columns:
+      - name: payment_type_sk
+        tests:
+          - not_null
+          - unique
+      - name: payment_type
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1,2,3,4,5,6]
+
+  - name: dim_ratecode
+    description: "Dimensión de códigos de tarifa."
+    columns:
+      - name: ratecode_sk
+        tests:
+          - not_null
+          - unique
+      - name: ratecode_id
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1,2,3,4,5,6,99]
+
+  - name: fct_trips
+    description: "Tabla de hechos de viajes, vinculada a dimensiones de zona, tarifa y tipo de pago."
+    columns:
+      - name: trip_sk
+        tests:
+          - not_null
+          - unique
+
+      - name: service_type
+        tests:
+          - accepted_values:
+              values: ['yellow','green']
+
+      - name: pu_zone_sk
+        tests:
+          - relationships:
+              to: ref('dim_zone')
+              field: zone_sk
+
+      - name: do_zone_sk
+        tests:
+          - relationships:
+              to: ref('dim_zone')
+              field: zone_sk
+
+      - name: payment_type_sk
+        tests:
+          - relationships:
+              to: ref('dim_payment_type')
+              field: payment_type_sk
+
+      - name: ratecode_sk
+        tests:
+          - relationships:
+              to: ref('dim_ratecode')
+              field: ratecode_sk
+
+      - name: tip_amount
+        description: "Propina del viaje (USD). Viene de SILVER.SILVER_TRIPS."
+        tests:
+          - dbt_utils.expression_is_true:
+              expression: "tip_amount >= 0"   # regla simple: no negativos

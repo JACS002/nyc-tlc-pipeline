@@ -1,0 +1,17 @@
+﻿,BOROUGH,BAND,AVG_MPH
+0,Bronx,day,13.21
+1,Bronx,night,15.15
+2,Brooklyn,day,10.26
+3,Brooklyn,night,10.95
+4,EWR,day,14.3
+5,EWR,night,12.25
+6,Manhattan,day,8.12
+7,Manhattan,night,10.71
+8,Queens,day,15.93
+9,Queens,night,21.57
+10,Staten Island,day,20.64
+11,Staten Island,night,28.16
+12,Unknown,day,9.53
+13,Unknown,night,12.65
+14,,day,16.18
+15,,night,13.21

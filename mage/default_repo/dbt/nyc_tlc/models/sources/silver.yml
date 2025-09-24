@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: silver
+    database: NYC_TLC
+    schema: SILVER
+    tables:
+      - name: silver_trips

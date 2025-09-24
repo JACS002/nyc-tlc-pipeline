@@ -1,0 +1,121 @@
+﻿,YEAR,MONTH,ZONE_ID,BOROUGH,ZONE,TRIPS
+0,2019,1,237,Manhattan,Upper East Side South,332772
+1,2019,1,236,Manhattan,Upper East Side North,324654
+2,2019,1,161,Manhattan,Midtown Center,312846
+3,2019,1,162,Manhattan,Midtown East,277465
+4,2019,1,230,Manhattan,Times Sq/Theatre District,264124
+5,2019,1,186,Manhattan,Penn Station/Madison Sq West,261010
+6,2019,1,48,Manhattan,Clinton East,241351
+7,2019,1,170,Manhattan,Murray Hill,239615
+8,2019,1,234,Manhattan,Union Sq,237918
+9,2019,1,142,Manhattan,Lincoln Square East,235553
+10,2019,2,237,Manhattan,Upper East Side South,294884
+11,2019,2,161,Manhattan,Midtown Center,287209
+12,2019,2,236,Manhattan,Upper East Side North,282054
+13,2019,2,162,Manhattan,Midtown East,254753
+14,2019,2,186,Manhattan,Penn Station/Madison Sq West,247355
+15,2019,2,230,Manhattan,Times Sq/Theatre District,240472
+16,2019,2,48,Manhattan,Clinton East,224154
+17,2019,2,234,Manhattan,Union Sq,222486
+18,2019,2,170,Manhattan,Murray Hill,220534
+19,2019,2,142,Manhattan,Lincoln Square East,216400
+20,2019,3,161,Manhattan,Midtown Center,328432
+21,2019,3,237,Manhattan,Upper East Side South,311896
+22,2019,3,162,Manhattan,Midtown East,286072
+23,2019,3,236,Manhattan,Upper East Side North,284091
+24,2019,3,230,Manhattan,Times Sq/Theatre District,279262
+25,2019,3,186,Manhattan,Penn Station/Madison Sq West,278436
+26,2019,3,48,Manhattan,Clinton East,256543
+27,2019,3,234,Manhattan,Union Sq,248503
+28,2019,3,170,Manhattan,Murray Hill,243862
+29,2019,3,142,Manhattan,Lincoln Square East,229981
+30,2019,4,237,Manhattan,Upper East Side South,329395
+31,2019,4,161,Manhattan,Midtown Center,318899
+32,2019,4,236,Manhattan,Upper East Side North,300452
+33,2019,4,162,Manhattan,Midtown East,272074
+34,2019,4,186,Manhattan,Penn Station/Madison Sq West,256526
+35,2019,4,230,Manhattan,Times Sq/Theatre District,254202
+36,2019,4,48,Manhattan,Clinton East,233874
+37,2019,4,132,Queens,JFK Airport,230561
+38,2019,4,234,Manhattan,Union Sq,227948
+39,2019,4,170,Manhattan,Murray Hill,225376
+40,2019,5,237,Manhattan,Upper East Side South,348341
+41,2019,5,236,Manhattan,Upper East Side North,313825
+42,2019,5,161,Manhattan,Midtown Center,301084
+43,2019,5,162,Manhattan,Midtown East,271316
+44,2019,5,186,Manhattan,Penn Station/Madison Sq West,259202
+45,2019,5,230,Manhattan,Times Sq/Theatre District,250756
+46,2019,5,132,Queens,JFK Airport,246515
+47,2019,5,142,Manhattan,Lincoln Square East,237239
+48,2019,5,48,Manhattan,Clinton East,235141
+49,2019,5,170,Manhattan,Murray Hill,229692
+50,2019,6,237,Manhattan,Upper East Side South,295321
+51,2019,6,161,Manhattan,Midtown Center,276621
+52,2019,6,236,Manhattan,Upper East Side North,262811
+53,2019,6,162,Manhattan,Midtown East,247113
+54,2019,6,186,Manhattan,Penn Station/Madison Sq West,242646
+55,2019,6,132,Queens,JFK Airport,235576
+56,2019,6,230,Manhattan,Times Sq/Theatre District,227592
+57,2019,6,48,Manhattan,Clinton East,227280
+58,2019,6,170,Manhattan,Murray Hill,218189
+59,2019,6,142,Manhattan,Lincoln Square East,200477
+60,2019,7,161,Manhattan,Midtown Center,269285
+61,2019,7,237,Manhattan,Upper East Side South,244900
+62,2019,7,186,Manhattan,Penn Station/Madison Sq West,242234
+63,2019,7,162,Manhattan,Midtown East,240826
+64,2019,7,132,Queens,JFK Airport,237858
+65,2019,7,230,Manhattan,Times Sq/Theatre District,225106
+66,2019,7,236,Manhattan,Upper East Side North,213276
+67,2019,7,170,Manhattan,Murray Hill,210032
+68,2019,7,48,Manhattan,Clinton East,203110
+69,2019,7,234,Manhattan,Union Sq,188440
+70,2019,8,161,Manhattan,Midtown Center,254765
+71,2019,8,186,Manhattan,Penn Station/Madison Sq West,243728
+72,2019,8,132,Queens,JFK Airport,240881
+73,2019,8,162,Manhattan,Midtown East,224419
+74,2019,8,237,Manhattan,Upper East Side South,221505
+75,2019,8,230,Manhattan,Times Sq/Theatre District,216446
+76,2019,8,170,Manhattan,Murray Hill,200509
+77,2019,8,48,Manhattan,Clinton East,198225
+78,2019,8,236,Manhattan,Upper East Side North,189662
+79,2019,8,234,Manhattan,Union Sq,183229
+80,2019,9,237,Manhattan,Upper East Side South,284829
+81,2019,9,236,Manhattan,Upper East Side North,261698
+82,2019,9,161,Manhattan,Midtown Center,244260
+83,2019,9,132,Queens,JFK Airport,241554
+84,2019,9,186,Manhattan,Penn Station/Madison Sq West,241499
+85,2019,9,162,Manhattan,Midtown East,227083
+86,2019,9,230,Manhattan,Times Sq/Theatre District,218533
+87,2019,9,48,Manhattan,Clinton East,205702
+88,2019,9,170,Manhattan,Murray Hill,200038
+89,2019,9,234,Manhattan,Union Sq,197960
+90,2019,10,237,Manhattan,Upper East Side South,334982
+91,2019,10,161,Manhattan,Midtown Center,303814
+92,2019,10,236,Manhattan,Upper East Side North,299756
+93,2019,10,162,Manhattan,Midtown East,262249
+94,2019,10,186,Manhattan,Penn Station/Madison Sq West,256857
+95,2019,10,230,Manhattan,Times Sq/Theatre District,250253
+96,2019,10,132,Queens,JFK Airport,248386
+97,2019,10,142,Manhattan,Lincoln Square East,229507
+98,2019,10,48,Manhattan,Clinton East,222233
+99,2019,10,170,Manhattan,Murray Hill,216294
+100,2019,11,237,Manhattan,Upper East Side South,321241
+101,2019,11,161,Manhattan,Midtown Center,290773
+102,2019,11,236,Manhattan,Upper East Side North,285519
+103,2019,11,186,Manhattan,Penn Station/Madison Sq West,246592
+104,2019,11,230,Manhattan,Times Sq/Theatre District,243941
+105,2019,11,162,Manhattan,Midtown East,239179
+106,2019,11,132,Queens,JFK Airport,221137
+107,2019,11,142,Manhattan,Lincoln Square East,217449
+108,2019,11,48,Manhattan,Clinton East,213762
+109,2019,11,170,Manhattan,Murray Hill,201102
+110,2019,12,237,Manhattan,Upper East Side South,317126
+111,2019,12,236,Manhattan,Upper East Side North,282253
+112,2019,12,161,Manhattan,Midtown Center,259530
+113,2019,12,186,Manhattan,Penn Station/Madison Sq West,248089
+114,2019,12,162,Manhattan,Midtown East,241399
+115,2019,12,230,Manhattan,Times Sq/Theatre District,230651
+116,2019,12,132,Queens,JFK Airport,223260
+117,2019,12,142,Manhattan,Lincoln Square East,217666
+118,2019,12,48,Manhattan,Clinton East,214983
+119,2019,12,170,Manhattan,Murray Hill,198376

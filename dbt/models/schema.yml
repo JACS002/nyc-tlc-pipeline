@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: stg_trips
+    columns:
+      - name: trip_unique_id
+        tests: [unique, not_null]
+      - name: pickup_at
+        tests: [not_null]
+      - name: dropoff_at
+        tests: [not_null]
+      - name: payment_type_id
+        tests:
+          - accepted_values:
+              values: [1,2,3,4,5,6]

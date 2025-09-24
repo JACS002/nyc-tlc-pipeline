@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: payment_type_lookup
+    description: "Lookup table mapping payment_type codes to human-readable descriptions."
+    columns:
+      - name: payment_type
+        description: "Numeric code for payment type"
+        tests:
+          - not_null
+          - unique
+      - name: description
+        description: "Description of the payment type"
+
+  - name: ratecode_lookup
+    description: "Lookup table mapping ratecode_id to descriptions."
+    columns:
+      - name: ratecode_id
+        description: "Numeric code for rate type"
+        tests:
+          - not_null
+          - unique
+      - name: description
+        description: "Description of the rate code"

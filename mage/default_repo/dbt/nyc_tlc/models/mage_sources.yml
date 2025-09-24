@@ -1,0 +1,14 @@
+sources:
+- description: Dataframes Mage upstream blocks
+  loader: mage
+  name: mage_nyc_tlc
+  schema: GOLD
+  tables:
+  - description: Dataframe for block `update_coverage` of the `ingest_backfill_2015_2025`
+      mage pipeline.
+    identifier: mage_ingest_backfill_2015_2025_update_coverage
+    meta:
+      block_uuid: update_coverage
+      pipeline_uuid: ingest_backfill_2015_2025
+    name: ingest_backfill_2015_2025_update_coverage
+version: 2

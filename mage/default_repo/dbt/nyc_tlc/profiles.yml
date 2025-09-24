@@ -1,0 +1,30 @@
+nyc_tlc_profile:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account:   "{{ mage_secret_var('SNOWFLAKE_ACCOUNT') }}"
+      user:      "{{ mage_secret_var('SNOWFLAKE_USER') }}"
+      password:  "{{ mage_secret_var('SNOWFLAKE_PASSWORD') }}"
+      role:      "{{ mage_secret_var('SNOWFLAKE_ROLE') }}"
+      database:  "{{ mage_secret_var('SNOWFLAKE_DATABASE') }}"
+      warehouse: "{{ mage_secret_var('SNOWFLAKE_WAREHOUSE') }}"
+      schema:    "{{ mage_secret_var('SNOWFLAKE_SCHEMA_SILVER') }}"
+      threads: 4
+      client_session_keep_alive: false
+      query_tag: dbt-nyc-tlc
+      insecure_mode: true
+    
+    gold:
+      type: snowflake
+      account:   "{{ mage_secret_var('SNOWFLAKE_ACCOUNT') }}"
+      user:      "{{ mage_secret_var('SNOWFLAKE_USER') }}"
+      password:  "{{ mage_secret_var('SNOWFLAKE_PASSWORD') }}"
+      role:      "{{ mage_secret_var('SNOWFLAKE_ROLE') }}"
+      database:  "{{ mage_secret_var('SNOWFLAKE_DATABASE') }}"
+      warehouse: "{{ mage_secret_var('SNOWFLAKE_WAREHOUSE') }}"
+      schema:    "{{ mage_secret_var('SNOWFLAKE_SCHEMA_GOLD') }}"
+      threads: 4
+      client_session_keep_alive: false
+      query_tag: dbt-nyc-tlc
+      insecure_mode: true
