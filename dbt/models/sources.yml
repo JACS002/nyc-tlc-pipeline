@@ -1,9 +1,0 @@
-version: 2
-sources:
-  - name: bronze
-    database: "{{ env_var('SNOWFLAKE_DATABASE') }}"
-    schema: "{{ env_var('SNOWFLAKE_SCHEMA_RAW') }}"
-    tables:
-      - name: yellow_trips
-      - name: green_trips
-      - name: taxi_zones
