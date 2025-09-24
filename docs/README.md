@@ -30,51 +30,35 @@ Implementa un pipeline completo de ingesta, transformación y modelado dimension
 ## 🏗️ Arquitectura
 
 ```mermaid
-flowchart LR
-  subgraph Sources[Fuentes]
-    A1["NYC TLC Parquet\nYellow/Green 2015–2025"]
-    A2["Taxi Zones CSV/Parquet"]
-  end
+flowchart TD
+    subgraph Mage["Orquestación Mage"]
+        A[generate_months (PY)] --> B[fetch_and_stage_parquet (PY)]
+        B --> C[snowflake_connection (PY)]
+        C --> D[copy_into_bronze (PY)]
+        C --> E[load_taxi_zones (PY)]
+        D --> Bronze[BRONZE.*]
+        E --> Bronze
+    end
 
-  subgraph Mage["Mage (Orquestación)"]
-    M1["Ingest Yellow"]
-    M2["Ingest Green"]
-    M3["DBT Staging → Silver"]
-    M4["DBT Gold (Dims & Fct)"]
-    M5["DBT Tests"]
-    M6["Snowflake Ops\nClustering / Grants"]
-  end
+    subgraph Snowflake["Snowflake Layers"]
+        Bronze[BRONZE schema<br/>green_raw, yellow_raw, taxi_zones]
+        Lookups[LOOKUPS schema<br/>payment_type_lookup, ratecode_lookup]
+        Silver[SILVER schema<br/>silver_trips (VIEW)]
+        Gold[GOLD schema<br/>dim_zone, dim_payment_type, dim_ratecode, fct_trips]
+    end
 
-  subgraph Snowflake[Snowflake]
-    BZ[(BRONZE)]
-    SZ[(SILVER)]
-    LZ[(LOOKUPS)]
-    GD[(GOLD)]
-  end
+    Bronze --> Staging[stg_yellow / stg_green (dbt)]
+    Lookups --> Silver
+    Bronze --> Silver
+    Silver --> Gold
+    Lookups --> Gold
 
-  subgraph Consumers["Consumo / Análisis"]
-    C1["Notebook data_analysis.ipynb"]
-    C2["BI / SQL Ad-hoc"]
-  end
+    subgraph Audit["AUDIT Layer"]
+        M[build_coverage_matrix (PY)] --> N[sync_coverage_to_audit_py (PY)]
+        M --> O[update_coverage (PY)]
+    end
 
-  A1 --> M1
-  A1 --> M2
-  A2 --> M3
-
-  M1 --> BZ
-  M2 --> BZ
-
-  M3 --> SZ
-
-  SZ --> GD
-  LZ --> GD
-
-  M4 --> GD
-  M5 --> GD
-  M6 --> GD
-
-  GD --> C1
-  GD --> C2
+    Gold --> M
 ```
 
 
@@ -82,7 +66,41 @@ flowchart LR
 - **Bronze (raw)**: datos tal cual del Parquet + metadatos de ingesta (`run_id`, `ingest_ts`).  
 - **Silver**: estandarización, limpieza, enriquecimiento con Taxi Zones.  
 - **Gold**: modelo en estrella con `fct_trips` y dimensiones conformadas.  
-- **Orquestación**: pipelines Mage para ingesta mensual y transformaciones dbt.  
+- **Orquestación**: pipelines Mage para ingesta mensual y transformaciones dbt.
+
+### Diagrama orquestacion
+```mermaid
+flowchart TD
+    A[generate_months (PY)] --> B[fetch_and_stage_parquet (PY)]
+    B --> C[snowflake_connection (PY)]
+    C --> D[copy_into_bronze (PY)]
+    C --> E[load_taxi_zones (PY)]
+
+    D --> F[stg_green (DBT)]
+    D --> G[stg_yellow (DBT)]
+
+    F --> J[silver_trips (DBT, VIEW)]
+    G --> J
+
+    H[payment_type_lookup (DBT)] --> J
+    I[ratecode_lookup (DBT)] --> J
+    E --> J
+
+    J --> K[dim_zone (DBT)]
+    J --> L[dim_payment_type (DBT)]
+    J --> M[dim_ratecode (DBT)]
+
+    K --> N[fct_trips (DBT)]
+    L --> N
+    M --> N
+
+    N --> O[build_coverage_matrix (PY)]
+    O --> P[sync_coverage_to_audit_py (PY)]
+    O --> Q[update_coverage (PY)]
+
+    Q --> R[dbt_setup (YAML - tests)]
+
+```
 
 ---
 
@@ -227,6 +245,7 @@ Consultas SQL (Snowflake Notebook):
 ## 📜 Licencia
 
 MIT © 2025
+
 
 
 
