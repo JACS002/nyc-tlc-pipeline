@@ -20,7 +20,7 @@ def transform(*args, **kwargs):
             for s in services:
                 rows.append({'year': y, 'month': m, 'service_type': s})
 
-    # Devolvemos un DataFrame para que Mage lo pueda manejar aguas abajo
+    # Devolvemos un DataFrame para que Mage lo pueda manejar abajo
     return pd.DataFrame(rows)
 
 

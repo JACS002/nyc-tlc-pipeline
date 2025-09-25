@@ -14,7 +14,7 @@ def test_snowflake_connection(*args, **kwargs):
         warehouse=get_secret_value('SNOWFLAKE_WAREHOUSE'),
         database=get_secret_value('SNOWFLAKE_DATABASE'),
         schema=get_secret_value('SNOWFLAKE_SCHEMA_SILVER'),
-        insecure_mode=True,   # igual que en ingest
+        insecure_mode=True,
     )
     try:
         with conn.cursor() as cur:

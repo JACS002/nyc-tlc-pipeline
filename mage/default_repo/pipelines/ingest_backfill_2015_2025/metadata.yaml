@@ -26,7 +26,7 @@ blocks:
   language: python
   name: snowflake_connection
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks:
@@ -70,7 +70,6 @@ blocks:
   color: null
   configuration: {}
   downstream_blocks:
-  - update_coverage
   - load_taxi_zones
   - sync_coverage_to_audit_py
   executor_config: null
@@ -117,22 +116,6 @@ blocks:
   upstream_blocks:
   - copy_into_bronze
   uuid: load_taxi_zones
-- all_upstream_blocks_executed: false
-  color: null
-  configuration: {}
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: update_coverage
-  retry_config: null
-  status: updated
-  timeout: null
-  type: transformer
-  upstream_blocks:
-  - copy_into_bronze
-  uuid: update_coverage
 - all_upstream_blocks_executed: true
   color: null
   configuration:
