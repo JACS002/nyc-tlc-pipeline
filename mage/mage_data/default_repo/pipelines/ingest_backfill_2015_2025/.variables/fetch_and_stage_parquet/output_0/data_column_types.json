@@ -1,1 +1,1 @@
-{"year": "int64", "month": "int64", "service_type": "str", "url": "str", "has_parquet": "bool", "http_status": "int64", "content_length": "int64", "checked_at": "str", "notes": "str"}
+{"year": "int64", "month": "int64", "service_type": "str", "url": "str", "has_parquet": "bool", "http_status": "int64", "content_length": "float64", "checked_at": "str", "notes": "str"}

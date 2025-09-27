@@ -37,10 +37,13 @@ def transform(data: pd.DataFrame, *args, **kwargs) -> pd.DataFrame:
     if missing:
         raise ValueError(f"Faltan columnas en la entrada del bloque: {missing}")
 
-    # FILTRO
-    data = data.copy()
-    #Query de prueba para 2019
-    #data = data.query("year == 2019").copy()
+    # FILTRO años completos
+    #data = data.copy()
+    #Query de prueba para año
+    data = data.query("year == 2025").copy()
+    #Query año y servicio
+    #data = data.query("year == 2019 and service_type == 'green' and month == 12").copy()
+
 
 
 

@@ -150,7 +150,7 @@ def export_data(df: DataFrame, **kwargs) -> None:
     - Descarga parquet, lee por row group, sube en micro-batches
     - Normaliza columnas y fechas (pickup/dropoff ISO; ingest_ts ISO)
     kwargs:
-      - batch_size_yellow (int, default 300_000)
+      - batch_size_yellow (int, default 100_000)
       - batch_size_green  (int, default 600_000)
     """
     if df is None or len(df) == 0:
@@ -166,7 +166,7 @@ def export_data(df: DataFrame, **kwargs) -> None:
     df['month'] = df['month'].astype(int)
     df['service_type'] = df['service_type'].astype(str)
 
-    bs_yellow = int(kwargs.get('batch_size_yellow', 200_000))
+    bs_yellow = int(kwargs.get('batch_size_yellow', 400_000))
     bs_green  = int(kwargs.get('batch_size_green',  600_000))
 
     conn = _conn()

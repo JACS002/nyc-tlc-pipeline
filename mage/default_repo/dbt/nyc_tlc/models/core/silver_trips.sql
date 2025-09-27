@@ -16,8 +16,10 @@ clean as (
   select
     *,
     -- reglas mínimas de calidad en silver
-    case when trip_distance < 0    then null else trip_distance end as trip_distance_clean,
-    case when total_amount   < -50 then null else total_amount   end as total_amount_clean,
+    case when trip_distance < 0     then null else trip_distance end as trip_distance_clean,
+    case when total_amount   < -50  then null else total_amount   end as total_amount_clean,
+    -- NUEVO: limpieza de propina (no negativa)
+    case when tip_amount     < 0    then null else tip_amount     end as tip_amount_clean,
     datediff('minute', pickup_datetime, dropoff_datetime)          as trip_minutes
   from filtered
 ),

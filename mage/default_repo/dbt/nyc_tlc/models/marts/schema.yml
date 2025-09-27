@@ -78,5 +78,6 @@ models:
       - name: tip_amount
         description: "Propina del viaje (USD). Viene de SILVER.SILVER_TRIPS."
         tests:
-          - dbt_utils.expression_is_true:
-              expression: "tip_amount >= 0"   # regla simple: no negativos
+          - dbt_utils.accepted_range:
+              min_value: 0
+              inclusive: true

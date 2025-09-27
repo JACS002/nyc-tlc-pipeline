@@ -26,7 +26,7 @@ blocks:
   language: python
   name: snowflake_connection
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
@@ -60,7 +60,7 @@ blocks:
   language: python
   name: build_coverage_matrix
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: transformer
   upstream_blocks:
@@ -78,13 +78,13 @@ blocks:
   language: python
   name: copy_into_bronze
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_exporter
   upstream_blocks:
   - fetch_and_stage_parquet
   uuid: copy_into_bronze
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks: []
@@ -100,7 +100,7 @@ blocks:
   upstream_blocks:
   - copy_into_bronze
   uuid: sync_coverage_to_audit_py
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks: []
@@ -356,7 +356,7 @@ blocks:
   language: sql
   name: dbt/nyc_tlc/models/marts/fct_trips
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: dbt
   upstream_blocks: []
