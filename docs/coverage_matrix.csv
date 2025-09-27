@@ -1,265 +1,265 @@
-service_type,year,month,url,has_parquet,http_status,content_length,checked_at
-yellow,2015,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-01.parquet,True,200,175325767,2025-09-22T03:18:02Z
-yellow,2015,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-02.parquet,True,200,171639741,2025-09-22T03:18:02Z
-yellow,2015,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-03.parquet,True,200,185355459,2025-09-22T03:18:02Z
-yellow,2015,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-04.parquet,True,200,180491380,2025-09-22T03:18:03Z
-yellow,2015,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-05.parquet,True,200,182487456,2025-09-22T03:18:03Z
-yellow,2015,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-06.parquet,True,200,171760764,2025-09-22T03:18:03Z
-yellow,2015,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-07.parquet,True,200,160689531,2025-09-22T03:18:04Z
-yellow,2015,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-08.parquet,True,200,154240802,2025-09-22T03:18:04Z
-yellow,2015,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-09.parquet,True,200,156401569,2025-09-22T03:18:04Z
-yellow,2015,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-10.parquet,True,200,171091467,2025-09-22T03:18:05Z
-yellow,2015,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-11.parquet,True,200,157669006,2025-09-22T03:18:05Z
-yellow,2015,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-12.parquet,True,200,159905170,2025-09-22T03:18:05Z
-yellow,2016,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-01.parquet,True,200,151251087,2025-09-22T03:18:05Z
-yellow,2016,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-02.parquet,True,200,158113739,2025-09-22T03:18:06Z
-yellow,2016,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-03.parquet,True,200,170019864,2025-09-22T03:18:06Z
-yellow,2016,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-04.parquet,True,200,165552992,2025-09-22T03:18:06Z
-yellow,2016,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-05.parquet,True,200,165807271,2025-09-22T03:18:07Z
-yellow,2016,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-06.parquet,True,200,156288749,2025-09-22T03:18:07Z
-yellow,2016,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-07.parquet,True,200,144621113,2025-09-22T03:18:07Z
-yellow,2016,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-08.parquet,True,200,139875738,2025-09-22T03:18:07Z
-yellow,2016,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-09.parquet,True,200,141848574,2025-09-22T03:18:08Z
-yellow,2016,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-10.parquet,True,200,152579388,2025-09-22T03:18:08Z
-yellow,2016,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-11.parquet,True,200,141148933,2025-09-22T03:18:08Z
-yellow,2016,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-12.parquet,True,200,145957196,2025-09-22T03:18:08Z
-yellow,2017,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-01.parquet,True,200,134830009,2025-09-22T03:18:09Z
-yellow,2017,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-02.parquet,True,200,127643793,2025-09-22T03:18:09Z
-yellow,2017,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-03.parquet,True,200,144578214,2025-09-22T03:18:09Z
-yellow,2017,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-04.parquet,True,200,141349194,2025-09-22T03:18:09Z
-yellow,2017,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-05.parquet,True,200,142379076,2025-09-22T03:18:10Z
-yellow,2017,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-06.parquet,True,200,135482101,2025-09-22T03:18:10Z
-yellow,2017,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-07.parquet,True,200,120841535,2025-09-22T03:18:10Z
-yellow,2017,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-08.parquet,True,200,118622365,2025-09-22T03:18:10Z
-yellow,2017,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-09.parquet,True,200,126899296,2025-09-22T03:18:11Z
-yellow,2017,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-10.parquet,True,200,136742510,2025-09-22T03:18:11Z
-yellow,2017,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-11.parquet,True,200,131062706,2025-09-22T03:18:11Z
-yellow,2017,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-12.parquet,True,200,134255377,2025-09-22T03:18:12Z
-yellow,2018,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-01.parquet,True,200,123668517,2025-09-22T03:18:12Z
-yellow,2018,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-02.parquet,True,200,119455285,2025-09-22T03:18:12Z
-yellow,2018,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-03.parquet,True,200,133552006,2025-09-22T03:18:13Z
-yellow,2018,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-04.parquet,True,200,131609714,2025-09-22T03:18:13Z
-yellow,2018,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-05.parquet,True,200,130850283,2025-09-22T03:18:14Z
-yellow,2018,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-06.parquet,True,200,124189362,2025-09-22T03:18:14Z
-yellow,2018,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-07.parquet,True,200,112244445,2025-09-22T03:18:15Z
-yellow,2018,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-08.parquet,True,200,111426538,2025-09-22T03:18:15Z
-yellow,2018,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-09.parquet,True,200,115505387,2025-09-22T03:18:15Z
-yellow,2018,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-10.parquet,True,200,126899602,2025-09-22T03:18:16Z
-yellow,2018,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-11.parquet,True,200,117170616,2025-09-22T03:18:16Z
-yellow,2018,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-12.parquet,True,200,117845011,2025-09-22T03:18:16Z
-yellow,2019,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet,True,200,110439634,2025-09-22T03:18:16Z
-yellow,2019,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-02.parquet,True,200,103356025,2025-09-22T03:18:17Z
-yellow,2019,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-03.parquet,True,200,116017372,2025-09-22T03:18:17Z
-yellow,2019,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-04.parquet,True,200,110139137,2025-09-22T03:18:17Z
-yellow,2019,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-05.parquet,True,200,111478943,2025-09-22T03:18:17Z
-yellow,2019,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-06.parquet,True,200,102903344,2025-09-22T03:18:18Z
-yellow,2019,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-07.parquet,True,200,93877343,2025-09-22T03:18:18Z
-yellow,2019,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-08.parquet,True,200,89999675,2025-09-22T03:18:18Z
-yellow,2019,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-09.parquet,True,200,97110325,2025-09-22T03:18:18Z
-yellow,2019,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-10.parquet,True,200,106293373,2025-09-22T03:18:19Z
-yellow,2019,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-11.parquet,True,200,100872983,2025-09-22T03:18:19Z
-yellow,2019,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-12.parquet,True,200,101044777,2025-09-22T03:18:19Z
-yellow,2020,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-01.parquet,True,200,93562858,2025-09-22T03:18:19Z
-yellow,2020,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-02.parquet,True,200,92134881,2025-09-22T03:18:20Z
-yellow,2020,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-03.parquet,True,200,44442590,2025-09-22T03:18:20Z
-yellow,2020,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-04.parquet,True,200,4442620,2025-09-22T03:18:20Z
-yellow,2020,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-05.parquet,True,200,6229864,2025-09-22T03:18:21Z
-yellow,2020,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-06.parquet,True,200,9505358,2025-09-22T03:18:21Z
-yellow,2020,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-07.parquet,True,200,13387778,2025-09-22T03:18:22Z
-yellow,2020,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-08.parquet,True,200,16601463,2025-09-22T03:18:22Z
-yellow,2020,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-09.parquet,True,200,21381938,2025-09-22T03:18:22Z
-yellow,2020,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-10.parquet,True,200,26306876,2025-09-22T03:18:23Z
-yellow,2020,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-11.parquet,True,200,23583368,2025-09-22T03:18:23Z
-yellow,2020,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-12.parquet,True,200,23020036,2025-09-22T03:18:23Z
-yellow,2021,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-01.parquet,True,200,21686067,2025-09-22T03:18:24Z
-yellow,2021,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-02.parquet,True,200,21777258,2025-09-22T03:18:24Z
-yellow,2021,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-03.parquet,True,200,30007852,2025-09-22T03:18:24Z
-yellow,2021,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-04.parquet,True,200,34018560,2025-09-22T03:18:25Z
-yellow,2021,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-05.parquet,True,200,38743682,2025-09-22T03:18:25Z
-yellow,2021,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-06.parquet,True,200,44071592,2025-09-22T03:18:25Z
-yellow,2021,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-07.parquet,True,200,43697690,2025-09-22T03:18:26Z
-yellow,2021,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-08.parquet,True,200,43425907,2025-09-22T03:18:26Z
-yellow,2021,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-09.parquet,True,200,46125883,2025-09-22T03:18:26Z
-yellow,2021,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-10.parquet,True,200,53286464,2025-09-22T03:18:27Z
-yellow,2021,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-11.parquet,True,200,53100722,2025-09-22T03:18:27Z
-yellow,2021,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-12.parquet,True,200,49639052,2025-09-22T03:18:27Z
-yellow,2022,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-01.parquet,True,200,38139949,2025-09-22T03:18:28Z
-yellow,2022,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-02.parquet,True,200,45616512,2025-09-22T03:18:28Z
-yellow,2022,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-03.parquet,True,200,55682369,2025-09-22T03:18:28Z
-yellow,2022,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-04.parquet,True,200,55222692,2025-09-22T03:18:29Z
-yellow,2022,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-05.parquet,True,200,55558821,2025-09-22T03:18:29Z
-yellow,2022,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-06.parquet,True,200,55365184,2025-09-22T03:18:29Z
-yellow,2022,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-07.parquet,True,200,49367712,2025-09-22T03:18:30Z
-yellow,2022,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-08.parquet,True,200,49717159,2025-09-22T03:18:30Z
-yellow,2022,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-09.parquet,True,200,49619957,2025-09-22T03:18:30Z
-yellow,2022,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-10.parquet,True,200,57061938,2025-09-22T03:18:31Z
-yellow,2022,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-11.parquet,True,200,50106631,2025-09-22T03:18:31Z
-yellow,2022,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-12.parquet,True,200,53640739,2025-09-22T03:18:31Z
-yellow,2023,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-01.parquet,True,200,47673370,2025-09-22T03:18:32Z
-yellow,2023,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-02.parquet,True,200,47748012,2025-09-22T03:18:32Z
-yellow,2023,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-03.parquet,True,200,56127762,2025-09-22T03:18:32Z
-yellow,2023,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-04.parquet,True,200,54222699,2025-09-22T03:18:33Z
-yellow,2023,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-05.parquet,True,200,58654627,2025-09-22T03:18:33Z
-yellow,2023,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-06.parquet,True,200,54999465,2025-09-22T03:18:33Z
-yellow,2023,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-07.parquet,True,200,48361828,2025-09-22T03:18:34Z
-yellow,2023,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-08.parquet,True,200,48152353,2025-09-22T03:18:34Z
-yellow,2023,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-09.parquet,True,200,47895515,2025-09-22T03:18:34Z
-yellow,2023,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-10.parquet,True,200,59009059,2025-09-22T03:18:34Z
-yellow,2023,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-11.parquet,True,200,56094653,2025-09-22T03:18:35Z
-yellow,2023,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-12.parquet,True,200,56804275,2025-09-22T03:18:35Z
-yellow,2024,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet,True,200,49961641,2025-09-22T03:18:35Z
-yellow,2024,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet,True,200,50349284,2025-09-22T03:18:36Z
-yellow,2024,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet,True,200,60078280,2025-09-22T03:18:36Z
-yellow,2024,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-04.parquet,True,200,59133625,2025-09-22T03:18:37Z
-yellow,2024,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-05.parquet,True,200,62553128,2025-09-22T03:18:37Z
-yellow,2024,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-06.parquet,True,200,59859922,2025-09-22T03:18:37Z
-yellow,2024,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-07.parquet,True,200,52299432,2025-09-22T03:18:38Z
-yellow,2024,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet,True,200,51067350,2025-09-22T03:18:38Z
-yellow,2024,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-09.parquet,True,200,61170186,2025-09-22T03:18:38Z
-yellow,2024,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet,True,200,64346071,2025-09-22T03:18:38Z
-yellow,2024,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-11.parquet,True,200,60658709,2025-09-22T03:18:39Z
-yellow,2024,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-12.parquet,True,200,61524085,2025-09-22T03:18:39Z
-yellow,2025,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-01.parquet,True,200,59158238,2025-09-22T03:18:39Z
-yellow,2025,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-02.parquet,True,200,60343086,2025-09-22T03:18:40Z
-yellow,2025,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-03.parquet,True,200,69964745,2025-09-22T03:18:40Z
-yellow,2025,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-04.parquet,True,200,67352824,2025-09-22T03:18:40Z
-yellow,2025,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-05.parquet,True,200,77837865,2025-09-22T03:18:41Z
-yellow,2025,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-06.parquet,True,200,73542954,2025-09-22T03:18:41Z
-yellow,2025,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-07.parquet,True,200,66943728,2025-09-22T03:18:41Z
-yellow,2025,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-08.parquet,False,403,0,2025-09-22T03:18:41Z
-yellow,2025,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-09.parquet,False,403,0,2025-09-22T03:18:42Z
-yellow,2025,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-10.parquet,False,403,0,2025-09-22T03:18:42Z
-yellow,2025,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-11.parquet,False,403,0,2025-09-22T03:18:42Z
-yellow,2025,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-12.parquet,False,403,0,2025-09-22T03:18:43Z
-green,2015,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-01.parquet,True,200,22732044,2025-09-22T03:18:43Z
-green,2015,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-02.parquet,True,200,23596236,2025-09-22T03:18:43Z
-green,2015,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-03.parquet,True,200,25895603,2025-09-22T03:18:44Z
-green,2015,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-04.parquet,True,200,25043726,2025-09-22T03:18:44Z
-green,2015,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-05.parquet,True,200,26706231,2025-09-22T03:18:44Z
-green,2015,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-06.parquet,True,200,24706467,2025-09-22T03:18:45Z
-green,2015,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-07.parquet,True,200,23394300,2025-09-22T03:18:45Z
-green,2015,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-08.parquet,True,200,23292101,2025-09-22T03:18:45Z
-green,2015,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-09.parquet,True,200,22720762,2025-09-22T03:18:45Z
-green,2015,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-10.parquet,True,200,24605888,2025-09-22T03:18:46Z
-green,2015,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-11.parquet,True,200,23209037,2025-09-22T03:18:46Z
-green,2015,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-12.parquet,True,200,24334716,2025-09-22T03:18:46Z
-green,2016,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-01.parquet,True,200,22088171,2025-09-22T03:18:46Z
-green,2016,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-02.parquet,True,200,22771978,2025-09-22T03:18:47Z
-green,2016,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-03.parquet,True,200,23783208,2025-09-22T03:18:47Z
-green,2016,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-04.parquet,True,200,23357449,2025-09-22T03:18:47Z
-green,2016,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-05.parquet,True,200,23493391,2025-09-22T03:18:47Z
-green,2016,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-06.parquet,True,200,21485727,2025-09-22T03:18:48Z
-green,2016,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-07.parquet,True,200,20529044,2025-09-22T03:18:48Z
-green,2016,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-08.parquet,True,200,19290983,2025-09-22T03:18:48Z
-green,2016,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-09.parquet,True,200,18039876,2025-09-22T03:18:48Z
-green,2016,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-10.parquet,True,200,19277013,2025-09-22T03:18:49Z
-green,2016,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-11.parquet,True,200,17783235,2025-09-22T03:18:49Z
-green,2016,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-12.parquet,True,200,18755368,2025-09-22T03:18:49Z
-green,2017,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-01.parquet,True,200,16620837,2025-09-22T03:18:50Z
-green,2017,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-02.parquet,True,200,15850278,2025-09-22T03:18:50Z
-green,2017,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-03.parquet,True,200,17764883,2025-09-22T03:18:50Z
-green,2017,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-04.parquet,True,200,16746272,2025-09-22T03:18:50Z
-green,2017,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-05.parquet,True,200,16504018,2025-09-22T03:18:51Z
-green,2017,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-06.parquet,True,200,15295902,2025-09-22T03:18:51Z
-green,2017,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-07.parquet,True,200,14450872,2025-09-22T03:18:51Z
-green,2017,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-08.parquet,True,200,13762500,2025-09-22T03:18:51Z
-green,2017,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-09.parquet,True,200,14021569,2025-09-22T03:18:51Z
-green,2017,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-10.parquet,True,200,14605863,2025-09-22T03:18:52Z
-green,2017,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-11.parquet,True,200,13843027,2025-09-22T03:18:52Z
-green,2017,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-12.parquet,True,200,14221060,2025-09-22T03:18:52Z
-green,2018,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-01.parquet,True,200,12588773,2025-09-22T03:18:52Z
-green,2018,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-02.parquet,True,200,12261328,2025-09-22T03:18:53Z
-green,2018,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-03.parquet,True,200,13304186,2025-09-22T03:18:53Z
-green,2018,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-04.parquet,True,200,12754439,2025-09-22T03:18:53Z
-green,2018,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-05.parquet,True,200,12772553,2025-09-22T03:18:54Z
-green,2018,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-06.parquet,True,200,11931153,2025-09-22T03:18:54Z
-green,2018,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-07.parquet,True,200,11167620,2025-09-22T03:18:54Z
-green,2018,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-08.parquet,True,200,11016416,2025-09-22T03:18:55Z
-green,2018,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-09.parquet,True,200,11232183,2025-09-22T03:18:55Z
-green,2018,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-10.parquet,True,200,11961961,2025-09-22T03:18:55Z
-green,2018,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-11.parquet,True,200,11092796,2025-09-22T03:18:55Z
-green,2018,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-12.parquet,True,200,11783052,2025-09-22T03:18:56Z
-green,2019,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-01.parquet,True,200,11071980,2025-09-22T03:18:56Z
-green,2019,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-02.parquet,True,200,10316792,2025-09-22T03:18:56Z
-green,2019,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-03.parquet,True,200,10760872,2025-09-22T03:18:56Z
-green,2019,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-04.parquet,True,200,9412998,2025-09-22T03:18:56Z
-green,2019,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-05.parquet,True,200,9050672,2025-09-22T03:18:57Z
-green,2019,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-06.parquet,True,200,8548670,2025-09-22T03:18:57Z
-green,2019,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-07.parquet,True,200,7921122,2025-09-22T03:18:57Z
-green,2019,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-08.parquet,True,200,7554849,2025-09-22T03:18:57Z
-green,2019,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-09.parquet,True,200,7692006,2025-09-22T03:18:58Z
-green,2019,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-10.parquet,True,200,7864969,2025-09-22T03:18:58Z
-green,2019,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-11.parquet,True,200,7584466,2025-09-22T03:18:58Z
-green,2019,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-12.parquet,True,200,7523110,2025-09-22T03:18:58Z
-green,2020,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-01.parquet,True,200,7183298,2025-09-22T03:18:58Z
-green,2020,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-02.parquet,True,200,6649395,2025-09-22T03:18:59Z
-green,2020,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-03.parquet,True,200,4019591,2025-09-22T03:18:59Z
-green,2020,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-04.parquet,True,200,713573,2025-09-22T03:18:59Z
-green,2020,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-05.parquet,True,200,1082586,2025-09-22T03:18:59Z
-green,2020,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-06.parquet,True,200,1205174,2025-09-22T03:19:00Z
-green,2020,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-07.parquet,True,200,1308197,2025-09-22T03:19:00Z
-green,2020,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-08.parquet,True,200,1503105,2025-09-22T03:19:00Z
-green,2020,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-09.parquet,True,200,1586731,2025-09-22T03:19:00Z
-green,2020,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-10.parquet,True,200,1731109,2025-09-22T03:19:01Z
-green,2020,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-11.parquet,True,200,1616478,2025-09-22T03:19:01Z
-green,2020,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-12.parquet,True,200,1458436,2025-09-22T03:19:01Z
-green,2021,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-01.parquet,True,200,1333519,2025-09-22T03:19:01Z
-green,2021,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-02.parquet,True,200,1145679,2025-09-22T03:19:02Z
-green,2021,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-03.parquet,True,200,1474538,2025-09-22T03:19:02Z
-green,2021,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-04.parquet,True,200,1534964,2025-09-22T03:19:02Z
-green,2021,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-05.parquet,True,200,1660008,2025-09-22T03:19:02Z
-green,2021,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-06.parquet,True,200,1676692,2025-09-22T03:19:02Z
-green,2021,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-07.parquet,True,200,1618130,2025-09-22T03:19:03Z
-green,2021,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-08.parquet,False,403,919,2025-09-22T03:19:03Z
-green,2021,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-09.parquet,False,403,919,2025-09-22T03:19:03Z
-green,2021,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-10.parquet,False,403,919,2025-09-22T03:19:03Z
-green,2021,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-11.parquet,False,403,919,2025-09-22T03:19:04Z
-green,2021,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-12.parquet,False,403,919,2025-09-22T03:19:04Z
-green,2022,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-01.parquet,False,403,919,2025-09-22T03:19:04Z
-green,2022,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-02.parquet,False,403,919,2025-09-22T03:19:04Z
-green,2022,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-03.parquet,False,403,919,2025-09-22T03:19:04Z
-green,2022,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-04.parquet,False,403,919,2025-09-22T03:19:05Z
-green,2022,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-05.parquet,False,403,919,2025-09-22T03:19:05Z
-green,2022,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-06.parquet,False,403,919,2025-09-22T03:19:05Z
-green,2022,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-07.parquet,False,403,919,2025-09-22T03:19:05Z
-green,2022,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-08.parquet,False,403,919,2025-09-22T03:19:06Z
-green,2022,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-09.parquet,False,403,919,2025-09-22T03:19:06Z
-green,2022,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-10.parquet,False,403,919,2025-09-22T03:19:06Z
-green,2022,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-11.parquet,False,403,919,2025-09-22T03:19:06Z
-green,2022,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-12.parquet,False,403,919,2025-09-22T03:19:06Z
-green,2023,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-01.parquet,False,403,919,2025-09-22T03:19:07Z
-green,2023,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-02.parquet,False,403,919,2025-09-22T03:19:07Z
-green,2023,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-03.parquet,False,403,919,2025-09-22T03:19:07Z
-green,2023,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-04.parquet,False,403,919,2025-09-22T03:19:07Z
-green,2023,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-05.parquet,False,403,919,2025-09-22T03:19:08Z
-green,2023,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-06.parquet,False,403,919,2025-09-22T03:19:08Z
-green,2023,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-07.parquet,False,403,919,2025-09-22T03:19:08Z
-green,2023,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-08.parquet,False,403,919,2025-09-22T03:19:09Z
-green,2023,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-09.parquet,False,403,919,2025-09-22T03:19:09Z
-green,2023,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-10.parquet,False,403,919,2025-09-22T03:19:09Z
-green,2023,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-11.parquet,False,403,919,2025-09-22T03:19:09Z
-green,2023,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-12.parquet,False,403,919,2025-09-22T03:19:09Z
-green,2024,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-01.parquet,False,403,919,2025-09-22T03:19:10Z
-green,2024,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-02.parquet,False,403,919,2025-09-22T03:19:10Z
-green,2024,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-03.parquet,False,403,919,2025-09-22T03:19:10Z
-green,2024,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-04.parquet,False,403,919,2025-09-22T03:19:10Z
-green,2024,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-05.parquet,False,403,919,2025-09-22T03:19:11Z
-green,2024,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-06.parquet,False,403,919,2025-09-22T03:19:11Z
-green,2024,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-07.parquet,False,403,919,2025-09-22T03:19:11Z
-green,2024,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-08.parquet,False,403,919,2025-09-22T03:19:11Z
-green,2024,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-09.parquet,False,403,919,2025-09-22T03:19:12Z
-green,2024,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-10.parquet,False,403,919,2025-09-22T03:19:12Z
-green,2024,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-11.parquet,False,403,919,2025-09-22T03:19:12Z
-green,2024,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-12.parquet,False,403,919,2025-09-22T03:19:13Z
-green,2025,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-01.parquet,False,403,919,2025-09-22T03:19:13Z
-green,2025,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-02.parquet,False,403,919,2025-09-22T03:19:13Z
-green,2025,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-03.parquet,False,403,919,2025-09-22T03:19:13Z
-green,2025,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-04.parquet,False,403,919,2025-09-22T03:19:14Z
-green,2025,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-05.parquet,False,403,919,2025-09-22T03:19:14Z
-green,2025,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-06.parquet,False,403,919,2025-09-22T03:19:14Z
-green,2025,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-07.parquet,False,403,919,2025-09-22T03:19:15Z
-green,2025,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-08.parquet,False,403,919,2025-09-22T03:19:15Z
-green,2025,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-09.parquet,False,403,919,2025-09-22T03:19:15Z
-green,2025,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-10.parquet,False,403,919,2025-09-22T03:19:15Z
-green,2025,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-11.parquet,False,403,919,2025-09-22T03:19:16Z
-green,2025,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-12.parquet,False,403,919,2025-09-22T03:19:16Z
+service_type,year,month,url,has_parquet,http_status,content_length,checked_at,notes
+green,2015,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2015,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2015,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2015,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2015,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2015,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2015,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2015,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2015,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2015,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2015,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2015,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2015-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2016,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2016,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2016,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2016,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2016,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2016,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2016,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2016,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2016,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2016,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2016,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2016,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2016-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2017,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2017,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2017,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2017,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2017,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2017,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2017,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2017,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2017,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2017,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2017,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2017,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2017-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2018,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2018,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2018,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2018,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2018,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2018,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2018,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2018,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2018,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2018,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2018,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2018,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2018-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2019,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2019,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2019,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2019,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2019,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2019,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2019,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2019,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2019,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2019,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2019,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2019,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2020,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2020,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-02.parquet,False,,,2025-09-27 19:51:11,from_raw
+green,2020,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2020,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2020,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2020,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2020,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2020,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2020,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2020,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2020,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2020,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2020-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2021,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2021,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2021,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2021,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2021,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2021,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2021,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2021,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2021,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2021,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2021,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2021,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2022,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2022,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2022,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2022,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2022,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2022,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2022,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2022,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2022,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2022,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2022,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2022,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2023,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2023,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2023,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2023,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2023,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2023,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2023,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2023,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2023,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2023,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2023,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2023,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2024,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2024,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2024,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2024,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2024,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2024,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2024,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2024,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2024,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2024,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2024,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2024,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2025,1,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2025,2,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2025,3,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2025,4,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2025,5,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2025,6,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2025,7,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2025,8,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+green,2025,9,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-09.parquet,False,,,2025-09-27 19:51:11,from_raw
+green,2025,10,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-10.parquet,False,,,2025-09-27 19:51:11,from_raw
+green,2025,11,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-11.parquet,False,,,2025-09-27 19:51:11,from_raw
+green,2025,12,https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2025-12.parquet,False,,,2025-09-27 19:51:11,from_raw
+yellow,2015,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2015,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2015,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2015,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2015,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2015,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2015,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2015,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2015,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2015,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2015,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2015,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2015-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2016,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2016,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2016,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2016,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2016,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2016,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2016,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2016,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2016,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2016,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2016,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2016,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2016-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2017,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2017,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2017,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2017,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2017,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2017,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2017,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2017,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2017,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2017,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2017,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2017,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2017-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2018,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2018,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2018,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2018,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2018,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2018,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2018,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2018,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2018,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2018,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2018,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2018,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2018-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2019,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2019,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2019,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2019,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2019,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2019,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2019,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2019,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2019,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2019,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2019,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2019,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2020,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2020,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2020,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2020,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2020,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2020,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2020,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2020,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2020,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2020,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2020,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2020,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2020-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2021,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2021,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2021,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2021,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2021,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2021,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2021,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2021,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2021,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2021,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2021,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2021,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2022,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2022,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2022,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2022,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2022,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2022,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2022,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2022,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2022,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2022,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2022,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2022,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2023,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2023,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2023,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2023,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2023,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2023,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2023,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2023,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2023,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2023,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2023,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2023,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2024,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2024,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2024,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2024,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2024,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2024,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2024,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2024,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2024,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-09.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2024,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2024,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-11.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2024,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-12.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2025,1,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-01.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2025,2,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-02.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2025,3,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-03.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2025,4,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-04.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2025,5,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-05.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2025,6,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-06.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2025,7,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-07.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2025,8,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-08.parquet,True,200.0,,2025-09-27 19:51:11,from_raw
+yellow,2025,9,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-09.parquet,False,,,2025-09-27 19:51:11,from_raw
+yellow,2025,10,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-10.parquet,False,,,2025-09-27 19:51:11,from_raw
+yellow,2025,11,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-11.parquet,False,,,2025-09-27 19:51:11,from_raw
+yellow,2025,12,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-12.parquet,False,,,2025-09-27 19:51:11,from_raw

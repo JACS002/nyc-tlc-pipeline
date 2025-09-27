@@ -37,7 +37,6 @@ blocks:
   configuration: {}
   downstream_blocks:
   - copy_into_bronze
-  - build_coverage_matrix
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -50,22 +49,6 @@ blocks:
   upstream_blocks:
   - generate_months
   uuid: fetch_and_stage_parquet
-- all_upstream_blocks_executed: true
-  color: null
-  configuration: {}
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: python
-  name: build_coverage_matrix
-  retry_config: null
-  status: updated
-  timeout: null
-  type: transformer
-  upstream_blocks:
-  - fetch_and_stage_parquet
-  uuid: build_coverage_matrix
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
@@ -202,7 +185,7 @@ blocks:
   language: sql
   name: dbt/nyc_tlc/models/lookups/payment_type_lookup
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: dbt
   upstream_blocks: []
@@ -308,7 +291,7 @@ blocks:
   upstream_blocks:
   - dbt/nyc_tlc/models/lookups/ratecode_lookup
   uuid: dbt/nyc_tlc/models/marts/dim_ratecode
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     dbt: {}

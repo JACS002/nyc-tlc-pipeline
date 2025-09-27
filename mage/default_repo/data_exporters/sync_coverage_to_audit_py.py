@@ -9,8 +9,12 @@ import os
 import pandas as pd
 import snowflake.connector
 from snowflake.connector.pandas_tools import write_pandas
+from datetime import datetime
 
-def _conn():
+# ============== Conexión ==============
+def _conn(schema_override=None):
+    # SIN fallback: siempre RAW (o lo que pases explícitamente en schema_override)
+    schema = schema_override or get_secret_value('SNOWFLAKE_SCHEMA_RAW')
     return snowflake.connector.connect(
         account=get_secret_value('SNOWFLAKE_ACCOUNT'),
         user=get_secret_value('SNOWFLAKE_USER'),
@@ -18,122 +22,208 @@ def _conn():
         role=get_secret_value('SNOWFLAKE_ROLE'),
         warehouse=get_secret_value('SNOWFLAKE_WAREHOUSE'),
         database=get_secret_value('SNOWFLAKE_DATABASE'),
-        schema=get_secret_value('SNOWFLAKE_SCHEMA_RAW'),  # BRONZE
+        schema=schema,
         client_session_keep_alive=False,
         ocsp_fail_open=True,
         insecure_mode=True,
     )
 
-DDL_AUDIT = """
+# ============== DDLs mínimas + ensure columns ==============
+DDL_AUDIT_MIN = """
 create table if not exists {db}.{schema}.load_audit (
   service_type string,
   year int,
-  month int,
-  row_count number,
-  latest_ingest_ts timestamp,
-  status string,   -- OK | PENDING | MISSING
-  note string
+  month int
 );
 """
 
+DDL_COVERAGE_MIN = """
+create table if not exists {db}.{schema}.coverage_matrix (
+  service_type string,
+  year int,
+  month int
+);
+"""
+
+def _ensure_audit_columns(conn, db, schema, table='load_audit'):
+    fq = f"{db}.{schema}.{table}"
+    cur = conn.cursor()
+    try:
+        cur.execute(f"alter table if exists {fq} add column if not exists row_count number")
+        cur.execute(f"alter table if exists {fq} add column if not exists latest_ingest_ts timestamp_ntz")
+        cur.execute(f"alter table if exists {fq} add column if not exists status string")  # OK | MISSING
+        cur.execute(f"alter table if exists {fq} add column if not exists note string")
+    finally:
+        cur.close()
+
+def _ensure_coverage_columns(conn, db, schema, table='coverage_matrix'):
+    fq = f"{db}.{schema}.{table}"
+    cur = conn.cursor()
+    try:
+        cur.execute(f"alter table if exists {fq} add column if not exists url string")
+        cur.execute(f"alter table if exists {fq} add column if not exists has_parquet boolean")
+        cur.execute(f"alter table if exists {fq} add column if not exists http_status int")
+        cur.execute(f"alter table if exists {fq} add column if not exists content_length number(38,0)")
+        cur.execute(f"alter table if exists {fq} add column if not exists checked_at timestamp_ntz")
+        cur.execute(f"alter table if exists {fq} add column if not exists notes string")
+    finally:
+        cur.close()
+
+# ============== Helpers ==============
+BASE_URL = "https://d37ci6vzurychx.cloudfront.net/trip-data"
+def _build_url(service: str, year: int, month: int) -> str:
+    return f"{BASE_URL}/{service}_tripdata_{year}-{month:02d}.parquet"
+
+def _grid_to_df(services, years_from, years_to):
+    rows = []
+    for svc in services:
+        for y in range(int(years_from), int(years_to) + 1):
+            for m in range(1, 13):
+                rows.append((svc, y, m))
+    return pd.DataFrame(rows, columns=['service_type','year','month'])
+
+def _values_rows_int(int_iterable):
+    # genera: (2015),(2016),...  -> múltiples filas (correcto para Snowflake VALUES)
+    return ", ".join(f"({int(v)})" for v in int_iterable)
+
+# ============== Exportador principal ==============
 @data_exporter
 def export_data(*args, **kwargs) -> None:
     """
-    Lee coverage_matrix.csv y sincroniza BRONZE.LOAD_AUDIT:
-      - MISSING: has_parquet=false
-      - PENDING: has_parquet=true y row_count=0
-      - OK:      has_parquet=true y row_count>0
-    No reingesta datos; sólo consulta conteos en BRONZE.Y/G y reconstruye LOAD_AUDIT.
+    Construye/actualiza LOAD_AUDIT y COVERAGE_MATRIX directamente desde RAW.
+    kwargs:
+      - years_from: int (default 2015)
+      - years_to:   int (default 2025)
+      - services:   list[str] (default ['green','yellow'])
+      - schema:     str (default: secreto SNOWFLAKE_SCHEMA_RAW)  -> SIN fallback
+      - truncate:   bool (default True)  -> TRUNCATE + INSERT
+      - write_csv:  bool (default True)  -> guarda coverage_matrix.csv en el repo
     """
     DB = get_secret_value('SNOWFLAKE_DATABASE')
-    SCHEMA = get_secret_value('SNOWFLAKE_SCHEMA_RAW')  # BRONZE
+    SCHEMA = kwargs.get('schema') or get_secret_value('SNOWFLAKE_SCHEMA_RAW')  # SIN fallback
 
-    # 1) Cargar coverage_matrix.csv del repo
-    repo = get_repo_path()
-    coverage_path = os.path.join(repo, 'coverage_matrix.csv')
-    if not os.path.exists(coverage_path):
-        raise FileNotFoundError(f"No se encontró {coverage_path}. Ejecuta el bloque que genera la matriz de cobertura.")
+    years_from = int(kwargs.get('years_from', 2015))
+    years_to   = int(kwargs.get('years_to', 2025))
+    services   = [s.lower() for s in kwargs.get('services', ['green','yellow']) if s.lower() in ('green','yellow')]
+    if not services:
+        services = ['green','yellow']
+    truncate   = bool(kwargs.get('truncate', True))
+    write_csv  = bool(kwargs.get('write_csv', True))
 
-    cov = pd.read_csv(coverage_path)
-    # columnas esperadas: service_type, year, month, url, has_parquet, http_status, content_length, checked_at
-    cov['service_type'] = cov['service_type'].str.lower()
-    cov['year'] = cov['year'].astype(int)
-    cov['month'] = cov['month'].astype(int)
-    cov['has_parquet'] = cov['has_parquet'].astype(bool)
+    # 1) Armar malla completa
+    base = _grid_to_df(services, years_from, years_to)
 
-    # 2) Consultar conteos por mes (sólo para los que tienen parquet)
-    conn = _conn()
-    cs = conn.cursor()
+    # 2) SQL de conteos desde RAW (VALUES como filas)
+    services_vals = ", ".join([f"('{s}')" for s in services])
+    years_rows  = _values_rows_int(range(years_from, years_to + 1))  # -> (2015),(2016),...
+    months_rows = _values_rows_int(range(1, 13))                     # -> (1),(2),...
+
+    sql_counts = f"""
+with services(service_type) as (
+  select column1 from values {services_vals}
+),
+years(year) as (
+  select column1 from values {years_rows}
+),
+months(month) as (
+  select column1 from values {months_rows}
+),
+base as (
+  select s.service_type, y.year, m.month
+  from services s
+  cross join years y
+  cross join months m
+),
+counts as (
+  select 'green' as service_type, year, month,
+         count(*) as row_count,
+         max(try_to_timestamp(ingest_ts)) as latest_ingest_ts
+  from {DB}.{SCHEMA}.green_trips
+  where year between {years_from} and {years_to}
+  group by 1,2,3
+  union all
+  select 'yellow' as service_type, year, month,
+         count(*) as row_count,
+         max(try_to_timestamp(ingest_ts)) as latest_ingest_ts
+  from {DB}.{SCHEMA}.yellow_trips
+  where year between {years_from} and {years_to}
+  group by 1,2,3
+)
+select
+  b.service_type,
+  b.year,
+  b.month,
+  coalesce(c.row_count, 0) as row_count,
+  c.latest_ingest_ts as latest_ingest_ts
+from base b
+left join counts c
+  on b.service_type = c.service_type
+ and b.year = c.year
+ and b.month = c.month
+order by b.service_type, b.year, b.month
+"""
+
+    conn = _conn(schema_override=SCHEMA)
+    cur = conn.cursor()
     try:
-        cs.execute(DDL_AUDIT.format(db=DB, schema=SCHEMA))
+        # 3) Ejecutar conteos
+        cur.execute(sql_counts)
+        df_counts: pd.DataFrame = cur.fetch_pandas_all()
+        df_counts.columns = [c.lower() for c in df_counts.columns]
+        df_counts['row_count'] = df_counts['row_count'].fillna(0).astype(int)
 
-        # armar DF audit
-        records = []
-        # Preparamos listas de meses a contar por servicio
-        to_check_yellow = cov[(cov['service_type']=='yellow') & (cov['has_parquet']==True)][['year','month']].drop_duplicates()
-        to_check_green  = cov[(cov['service_type']=='green')  & (cov['has_parquet']==True)][['year','month']].drop_duplicates()
+        # 4) Construir LOAD_AUDIT
+        audit_df = df_counts.copy()
+        audit_df['status'] = audit_df['row_count'].apply(lambda x: 'OK' if x > 0 else 'MISSING')
+        audit_df['note'] = pd.NA
+        audit_df = audit_df[['service_type','year','month','row_count','latest_ingest_ts','status','note']]
 
-        # Hacemos una sola query por servicio (más eficiente)
-        def fetch_counts(table_name: str):
-            q = f"""
-            select year, month,
-                   count(*) as row_count,
-                   max(try_to_timestamp(ingest_ts)) as latest_ingest_ts
-            from {DB}.{SCHEMA}.{table_name}
-            group by 1,2
-            """
-            cs.execute(q)
-            rows = cs.fetchall()
-            # dict {(year,month): (row_count, latest_ingest_ts)}
-            return {(r[0], r[1]): (int(r[2] or 0), r[3]) for r in rows}
+        # 5) Construir COVERAGE_MATRIX (basado en audit_df)
+        now_ntz = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
+        cov_df = audit_df[['service_type','year','month','row_count']].copy()
+        cov_df['url'] = cov_df.apply(lambda r: _build_url(r['service_type'], int(r['year']), int(r['month'])), axis=1)
+        cov_df['has_parquet'] = cov_df['row_count'] > 0
+        cov_df['http_status'] = cov_df['has_parquet'].apply(lambda v: 200 if bool(v) else None)
+        cov_df['content_length'] = pd.NA
+        cov_df['checked_at'] = pd.to_datetime(now_ntz)  # NTZ
+        cov_df['notes'] = 'from_raw'
+        cov_df = cov_df[['service_type','year','month','url','has_parquet','http_status','content_length','checked_at','notes']]
 
-        yellow_counts = fetch_counts('yellow_trips')
-        green_counts  = fetch_counts('green_trips')
+        # 6) Asegurar tablas y columnas
+        cur.execute(DDL_AUDIT_MIN.format(db=DB, schema=SCHEMA))
+        _ensure_audit_columns(conn, DB, SCHEMA)
 
-        # 3) Determinar status fila por fila
-        for idx, r in cov.iterrows():
-            svc = r['service_type']; y = int(r['year']); m = int(r['month'])
-            if not r['has_parquet']:
-                records.append({
-                    'service_type': svc,
-                    'year': y, 'month': m,
-                    'row_count': 0,
-                    'latest_ingest_ts': None,
-                    'status': 'MISSING',
-                    'note': 'No Parquet available'
-                })
-            else:
-                if svc == 'yellow':
-                    rc, ts = yellow_counts.get((y,m), (0, None))
-                else:
-                    rc, ts = green_counts.get((y,m), (0, None))
-                status = 'OK' if rc > 0 else 'PENDING'
-                records.append({
-                    'service_type': svc,
-                    'year': y, 'month': m,
-                    'row_count': rc,
-                    'latest_ingest_ts': ts,
-                    'status': status,
-                    'note': None
-                })
+        cur.execute(DDL_COVERAGE_MIN.format(db=DB, schema=SCHEMA))
+        _ensure_coverage_columns(conn, DB, SCHEMA)
 
-        audit_df = pd.DataFrame(records)
-        audit_df.sort_values(['service_type','year','month'], inplace=True)
+        # 7) Escribir en Snowflake (TRUNCATE + INSERT por defecto)
+        fq_audit = f"{DB}.{SCHEMA}.load_audit"
+        fq_cov   = f"{DB}.{SCHEMA}.coverage_matrix"
 
-        # 4) Reemplazar contenido de LOAD_AUDIT
-        cs.execute(f"truncate table {DB}.{SCHEMA}.load_audit")
-        ok, nchunks, nrows, _ = write_pandas(
-            conn,
-            audit_df,
-            table_name='load_audit',
-            database=DB,
-            schema=SCHEMA,
-            quote_identifiers=False,
-            chunk_size=50_000,
-        )
-        print(f"[audit] Actualizado ok={ok}, filas={nrows}, chunks={nchunks}")
+        if truncate:
+            cur.execute(f"truncate table {fq_audit}")
+            cur.execute(f"truncate table {fq_cov}")
+        else:
+            # delete selectivo para la malla solicitada
+            keys = ", ".join([f"('{r.service_type}',{int(r.year)},{int(r.month)})" for r in base.itertuples(index=False)])
+            if keys:
+                cur.execute(f"delete from {fq_audit} where (service_type,year,month) in ({keys})")
+                cur.execute(f"delete from {fq_cov}   where (service_type,year,month) in ({keys})")
+
+        ok1, c1, n1, _ = write_pandas(conn, audit_df, table_name='load_audit', database=DB, schema=SCHEMA, quote_identifiers=False, chunk_size=100_000)
+        ok2, c2, n2, _ = write_pandas(conn, cov_df,   table_name='coverage_matrix', database=DB, schema=SCHEMA, quote_identifiers=False, chunk_size=100_000)
+        print(f"[load_audit] ok={ok1}, rows={n1}, chunks={c1}")
+        print(f"[coverage_matrix] ok={ok2}, rows={n2}, chunks={c2}")
+
+        # 8) (Opcional) Guardar coverage_matrix.csv en el repo
+        if write_csv:
+            out_path = os.path.join(get_repo_path(), 'coverage_matrix.csv')
+            tmp = out_path + ".tmp"
+            cov_df.to_csv(tmp, index=False)
+            os.replace(tmp, out_path)
+            print(f"[coverage_matrix] CSV escrito en {out_path}")
 
     finally:
-        try: cs.close()
+        try: cur.close()
         except Exception: pass
         conn.close()

@@ -54,8 +54,7 @@ flowchart TD
     LookupsNode --> GoldNode
 
     subgraph Audit["AUDIT Layer"]
-        M["build_coverage_matrix (PY)"] --> N["sync_coverage_to_audit_py (PY)"]
-        M --> O["update_coverage (PY)"]
+        N["sync_coverage_to_audit_py (PY)"]
     end
 
     GoldNode --> M
@@ -92,10 +91,10 @@ flowchart TD
     J --> M["dim_ratecode (DBT)"]
 
     K --> N["fct_trips (DBT)"]
-    L --> N
-    M --> N
+    L --> O
+    M --> O
 
-    N --> O["build_coverage_matrix (PY)"]
+
     O --> P["sync_coverage_to_audit_py (PY)"]
     O --> Q["update_coverage (PY)"]
 
